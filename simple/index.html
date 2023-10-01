@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+       <a id="icon" href="#"> <i class="fas p-2 bar fa-bars"></i></a>
+    </div>  
+    <div id="sidenavId" class="sidebarclose" >
+        <br><br><br><br>
+       <a href="home.html"> <i class="fas p-2 bar fa-home"></i><span id="Text1" >Employee</span></a><br>
+    
+       <a href=""> <i class="fas p-2 bar fa-envelope"></i><span id="Text1" >Add </span></a><br>
+       <a href=""> <i class="fas p-2 bar fa-home"></i><span id="Text1" >View</span></a><br>
+       
+    </div>
+ 
+
+     <div class="container ">
+         <div class="row">
+              <div class="col-lg-2">
+          
+              </div>
+              <div class="col-lg-3">
+                <div class="title">
+                    <h1>Total Employee 00</h1>
+                </div>
+                <div class="img">
+
+                </div>
+                <div class="textt">
+                    
+              
+                </div>
+              </div>
+
+              <div class="col-lg-3"> 
+              </div>
+              <div class="col-lg-3">   
+              </div>
+              <div class="col-lg-4 ">
+                <form action="" class="form">
+                    <p>
+                   <label for="">
+                       
+                       <input type="text" class="form-control emp" placeholder="enter name" >
+                   </label>
+                  </p>
+                  <p>
+                   <label for="">
+                       
+                       <input type="email" class="form-control emp" placeholder="enter Email" >
+                   </label>
+                  </p>
+                  <p>
+                   <label for="">
+                       
+                       <input type="number" class="form-control emp" placeholder="enter number" >
+                   </label>
+                  </p>
+                  <p>
+                   <label for="">
+                       
+                       <input type="file" class="form-control emp"  >
+                   </label>
+                  </p>
+                  <p>
+                   <label for="">
+                       
+                       <input type="text" class="form-control emp" placeholder="enter Dept" >
+                   </label>
+                  </p>
+                   <p>
+                       <label for="">
+                           
+                           <input type="text" class="form-control emp" placeholder="enter password" >
+                       </label>
+                   </p>
+                   <p>
+                       <label for="">
+                           
+                           <input type="text" class="form-control emp" placeholder="confirm password" >
+                       </label>
+                       
+                   </p>
+                   <p style="margin-left: 30px;">
+                    <button class="btn btn-primary">add</button>
+                
+                   </p>
+                    
+               </form>
+              </div>
+              <div class="col-lg-2"></div>
+              <div class="col-lg-6">
+                 <table class="table border">
+                    <thead>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>phone</th>
+                        <th>img</th>
+                        <th>dept</th>
+                        <th>edit</th>
+                        <th>delete</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ff</td>
+                            <td>ff</td>
+                            <td>01777</td>
+                            <td>ff</td>
+                            <td>ff</td>
+                            <td><button class="btn btn-success">edit</button></td>
+                            <td><button class="btn btn-warning">edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>ff</td>
+                            <td>ff</td>
+                            <td>01777</td>
+                            <td>ff</td>
+                            <td>ff</td>
+                            <td><button class="btn btn-success">edit</button></td>
+                            <td><button class="btn btn-warning">edit</button></td>
+                        </tr>
+                    </tbody>
+                 </table>
+              </div>
+             
+         </div>
+     </div>
+
+      <script>
+          var icon = document.getElementById("icon");
+       
+          var sidenavId = document.getElementById('sidenavId');
+          var Text = document.getElementById('Text');
+          var Text2 = document.getElementById('Text2');
+          var Text3 = document.getElementById('Text3');
+          var Text4 = document.getElementById('Text4');
+        
+          icon.addEventListener('click',function () {
+       
+                sidenavId.classList.toggle('sidebarclose')
+                sidenavId.classList.toggle('sidebaropen');
+                Text.classList.toggle('d-none');
+                Text2.classList.toggle('d-none');
+                Text3.classList.toggle('d-none');
+                Text4.classList.toggle('d-none');
+                c.classList.toggle('d-block');
+                c.classList.toggle('d-none');
+                
+          })
+
+      </script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
